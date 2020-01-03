@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.example-matcard{
+    max-width: 200px;
+    padding: 4px;align-content: center;
+}
+div.container{
+    display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin:10px;
+    }
+
+    .controles-container > *
+    {
+        width: 30%;
+    }
+    .mat-elevation-z8
+    {
+        widows:90%;
+        
+    }
+    .mat-toool mat-toolbar{
+        padding: 1px;
+    }
+    span.fill-remainings{
+        flex:1 1 auto;
+    }
+    
+    form.normal-form
+    {
+        margin: 10px ;
+    }
+    .controles-container
+    {
+        width: 100%;
+        padding: 5%;
+    }
+   
+    
+    .controles-container1
+    {
+        width: 100%;
+        padding: 5%;
+    }
+    .controles-container > *
+    {
+        width: 100%;
+    }
+    
+    .example-h2
+    {
+margin:10px;
+    }
+    .example-section {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        height: 60px;
+      }
+      .example-margin
+      {min-width:12%;
+        max-width: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+          color: rgb(52, 52, 219);
+      }
+
+      .button-row button{
+          margin:5px;
+      }
+      snack-bar-container.notification simple-snack-bar {
+          font-size: 18px !important;
+          font-weight:bold;
+      }
+      snack-bar-container.success {
+          background-color: goldenrod;
+          color: black;
+      }
+      .hide {
+display:none;
+      }
+      mat-footer-row mat-footer-cell {
+          justify-content: center;
+          font-style: italic;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .search-div {
+          margin: 30px;
+      }
+
+      .search-form-field {
+          flex: 1;
+          
+          min-width: 100px;
+          margin-left: 5px;
+          padding: 5px 5px;
+          background-color: rgb(211, 205, 195);
+          border-radius: 10px;
+      }
+      .search-form-field div.mat-form-field-underline {
+          display: none;
+      }
+      .search-form-field div.mat-form-field-infix {
+        border-top: 0px;
+    }
+    .search-form-field div.mat-form-field-wrapper {
+        padding-bottom: 0px;
+    }
+    .search-form-field div.mat-form-field button {
+        height: 32px;
+        width: 50px;
+    }
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport {
+    width:extend-to-zoom;
+    zoom: 1.0;
+}
+ 
+ /* @media screen and (min-width: 400px)
+{
+    mat-toolbar {
+min-width: 100px;
+    }
+    .button-row{
+        width: 2px ;
+        padding-left: 10px;
+    }
+} */
+
+.labeltoggle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder; 
+}

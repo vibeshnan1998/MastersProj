@@ -1,0 +1,19 @@
+.navv {
+    justify-content: space-between;
+  }
+  a {
+      padding-right: 1rem;
+      text-decoration: none;
+      color: white;
+      display: inline-block
+  }
+  span a.active {
+      color: rgb(67, 252, 11);
+  }
+
+   a:visited, a:link{
+    color: rgb(0, 0, 0);
+}
+span a:hover{
+    color: rgb(255, 238, 0);
+}
