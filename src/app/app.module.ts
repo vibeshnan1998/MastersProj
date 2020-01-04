@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 import 'hammerjs';
 import {MaterialModule} from './material/material.module';
 import { AppRoutingModule, RoutingComponents } from './app-routing.module';
-import { AppComponent } from './app.component';
+// import { AppComponent } from './AppComponent';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material';
-
 import { EntryComponent } from './region/entry/entry.component';
 import { RegionService } from './services/region.service';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 // Angular firebase
 import {AngularFireModule} from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
  // environments
 import {environment} from '../environments/environment';
@@ -28,6 +29,10 @@ import { CityViewComponent } from './city-list/city-view/city-view.component';
 import { CountryService } from './services/country.service';
 import { StateService } from './services/state.service';
 import { CityService } from './services/city.service';
+import { AppComponent } from './app.component';
+import { LoginComponent } from './auth/login/login.component';
+import { ToolbarComponent } from './auth/toolbar/toolbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +46,9 @@ import { CityService } from './services/city.service';
     CityListComponent,
     CountryViewComponent,
     StateViewComponent,
-    CityViewComponent
+    CityViewComponent,
+    LoginComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -53,10 +60,12 @@ import { CityService } from './services/city.service';
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
     FormsModule
   ],
   providers: [RegionService, CountryService, StateService, CityService],
   bootstrap: [AppComponent],
-  entryComponents: [StateViewComponent, EntryComponent, CountryViewComponent]
+  entryComponents: [StateViewComponent, EntryComponent, CountryViewComponent, CityViewComponent]
 })
 export class AppModule { }

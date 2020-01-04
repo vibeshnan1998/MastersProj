@@ -1,5 +1,10 @@
-.navv {
+#navv {
     justify-content: space-between;
+  }
+  #navv .toolbar-avatar {
+      background-size: cover;
+      box-shadow: none;
+      
   }
   a {
       padding-right: 1rem;
@@ -16,4 +21,8 @@
 }
 span a:hover{
     color: rgb(255, 238, 0);
+}
+
+button {
+    outline: none;
 }
